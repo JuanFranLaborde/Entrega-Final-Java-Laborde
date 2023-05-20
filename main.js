@@ -1,9 +1,9 @@
 const carrito = [];
 
-class PrendaUsuario {
-  constructor(tipoPrenda, precioPrenda) {
-    this.tipoPrenda = tipoPrenda;
-    this.precioPrenda = precioPrenda;
+class TragoUsuario {
+  constructor(tipoTrago, precioTrago) {
+    this.tipoTrago = tipoTrago;
+    this.precioTrago = precioTrago;
   }
 }
 
@@ -92,8 +92,8 @@ function createProductCard(producto) {
 }
 
 function agregarAlCarrito(nombre, precio) {
-  const prenda = new PrendaUsuario(nombre, precio);
-  carrito.push(prenda);
+  const trago = new TragoUsuario(nombre, precio);
+  carrito.push(trago);
 
   mostrarMensaje(`Se agregó al carrito: ${nombre}`);
   actualizarCarrito();
@@ -140,10 +140,10 @@ function actualizarCarrito() {
 
   for (let i = 0; i < carrito.length; i++) {
     const li = document.createElement('li');
-    li.textContent = `${carrito[i].tipoPrenda} - $${carrito[i].precioPrenda}`;
+    li.textContent = `${carrito[i].tipoTrago} - $${carrito[i].precioTrago}`;
     cartItems.appendChild(li);
 
-    total += carrito[i].precioPrenda;
+    total += carrito[i].precioTrago;
   }
 
   const liTotal = document.createElement('li');
