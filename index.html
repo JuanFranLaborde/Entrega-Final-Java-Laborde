@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL BAR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="imagenes/Drink+Addicts.png" alt="LET's DRINK" href="index.html">
+        </div>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">About</a></li>
+           </ul>            
+        </nav>
+        <a class="btn" href="contact.html"><button>Contact</button></a>
+    </header>
+    
+    <main>
+        <div class="product-cards" id="product-cards"></div>
+
+        <div id="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <button id="vaciarcarrito">vaciar Carrito</button>
+            <button id="comprar">comprar</button>
+        </div>
+    </main>
+
+    <footer>
+        <img src="" alt="" class="logo">
+        <div class="social-icon-container">
+            <a href="https://www.facebook.com/juanfrancisco.laborde.1/" class="social-icon"></a>
+            <a href="https://www.instagram.com/juanfranlaborde_/?hl=es-la" class="social-icon"></a>
+            <a href="https://www.linkedin.com/in/juan-francisco-laborde-993636242/" class="social-icon"></a>
+        </div>
+        <ul class="footer-menu-container">
+            <li class="menu-item">Legal</li>
+            <li class="menu-item">Cookies</li>
+            <li class="menu-item">Privacy</li>
+        </ul>
+        <span class="copyright">&copy;2023, LET's DRINK. All rights reserved </span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
